@@ -1,12 +1,10 @@
-console.log("A simple node application");
+console.log("NPM Modules");
 
-// Requires and Exports
+var _ = require('underscore');
 
-var myModule = require('./sample_module');
+var names = ["Alan","Keisha","Charlie","Debra"];
 
-console.log(myModule);
-
-//console.log(myModule.randomNum());
-
-console.log(myModule());
+_.each(names, function(name) {
+  console.log("Name is: " + name);
+});
 
