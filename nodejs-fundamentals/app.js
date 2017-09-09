@@ -1,4 +1,10 @@
-console.log("Managing Node Versions");
+console.log("Core Modules");
 
-console.log("This node process is using version " + process.version);
+var os = require('os');
+
+console.log("Platform: " + os.platform());
+
+var http = require('http');
+
+console.log(http);
 
